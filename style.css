@@ -1,0 +1,71 @@
+@font-face {
+    font-family: PackingHeat;
+    src: url(./fonts/PackingHeat.ttf) format('truetype');
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+}
+
+.page-container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.graphic-container {
+    width: 30%;
+    height: 100vh;
+    
+}
+
+img {
+    width: 30vw;
+    height: 100vh;
+    display: block;
+}
+
+.logo {
+    position: absolute;
+    bottom: 55%;
+    height: 20%;
+    width: 30%;
+    background-color: rgba(7, 7, 7, 0.6)
+    
+}
+
+.thor {
+    position: absolute;
+    top: 10%;
+    height: 80%;
+    width: auto;
+    left: 25%;
+}
+
+.image-container {
+    height: 100%;
+}
+
+.image-container::after {
+    font-family: 'PackingHeat' , sans-serif;
+    content: "ODIN";
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    left: 50%;
+    
+}
+
+/*
+.logo {
+    position: absolute;
+    bottom: 60%;
+    font-size: 40px;
+    color: white;
+    z-index: 5;
+    overflow: hidden;
+    font-family: 'PackingHeat', sans-serif;
+}
+*/
