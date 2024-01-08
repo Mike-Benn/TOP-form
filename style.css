@@ -3,6 +3,10 @@
     src: url(./fonts/PackingHeat.ttf) format('truetype');
 }
 
+* {
+    font-family: sans-serif;
+}
+
 body {
     margin: 0;
     height: 100vh;
@@ -18,6 +22,7 @@ body {
 .graphic-container {
     width: 30%;
     height: 100vh;
+    min-width: 30%;
     
 }
 
@@ -51,12 +56,60 @@ img {
 .image-container::after {
     font-family: 'PackingHeat' , sans-serif;
     content: "ODIN";
-    font-size: 30px;
+    font-size: 80px;
     color: white;
     position: absolute;
     left: 50%;
     
 }
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+     
+}
+
+.form-body {
+    height: 65vh;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 25px 40px;
+    
+}
+
+.form-footer {
+    height: 35vh;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 25px 40px;
+
+}
+
+.form-body {
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.1);
+    z-index: 1;
+}
+
+.form-footer {
+    background-color: #fffeea;
+    
+}
+
+
+button {
+    border: 0px;
+    background-color: #45721c;
+    padding: 12px 40px;
+    border-radius: 6px;
+    color: white;
+    margin-bottom: 10px;
+    font-weight: bold;
+
+}
+
+
 
 /*
 .logo {
