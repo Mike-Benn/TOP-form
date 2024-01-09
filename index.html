@@ -20,16 +20,41 @@
             <div class="form-header">
                 <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now </em>to get started.</p>
                 <p>You <em>know</em> you want to.</p>
-                
             </div>
             <div class="form-body">
                 <h3>Let's do this!</h3>
-                <div class="form-left">
-                    
-                </div>
-                <div class="form-right">
-
-                </div>
+                <form action="#" method="post" id="new-account">
+                    <div class="form-contents">
+                        <div class="form-left">
+                            <div>
+                                <label for="first_name">FIRST NAME</label><br>
+                                <input type="text" name="FirstName" id="first_name">
+                            </div>
+                            <div>
+                                <label for="user_email">EMAIL</label><br>
+                                <input type="email" name="Email" id="user_email">
+                            </div>
+                            <div>
+                                <label for="user_password">PASSWORD</label><br>
+                                <input type="password" name="Password" id="user_password" minlength="8">
+                            </div>
+                        </div>
+                        <div class="form-right">
+                            <div>
+                                <label for="last_name">LAST NAME</label><br>
+                                <input type="text" name="LastName" id="last_name">
+                            </div>
+                            <div>
+                                <label for="phone_number">PHONE NUMBER</label><br>
+                                <input type="tel" name="PhoneNumber" id="phone_number">
+                            </div>
+                            <div>
+                                <label for="password_confirm">CONFIRM PASSWORD</label><br>
+                                <input type="password" name="PasswordConfirm" id="password_confirm" minlength="8">
+                            </div>
+                        </div>
+                    </div>
+                </form>
             </div>
             <div class="form-footer">
                 <button type="submit" form="new-account" value="CreateAccount">Create Account</button>
