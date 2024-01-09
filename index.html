@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TOP Form</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="page-container">
@@ -28,36 +29,36 @@
                         <div class="form-left">
                             <div>
                                 <label for="first_name">FIRST NAME</label><br>
-                                <input type="text" name="FirstName" id="first_name">
+                                <input class="input-default" type="text" name="FirstName" id="first_name" autocomplete="off">
                             </div>
                             <div>
                                 <label for="user_email">EMAIL</label><br>
-                                <input type="email" name="Email" id="user_email">
+                                <input class="input-default" type="email" name="Email" id="user_email" autocomplete="off">
                             </div>
                             <div>
                                 <label for="user_password">PASSWORD</label><br>
-                                <input type="password" name="Password" id="user_password" minlength="8">
+                                <input class="input-password" type="password" name="Password" id="user_password" minlength="8" autocomplete="off">
                             </div>
                         </div>
                         <div class="form-right">
                             <div>
                                 <label for="last_name">LAST NAME</label><br>
-                                <input type="text" name="LastName" id="last_name">
+                                <input class="input-default" type="text" name="LastName" id="last_name" autocomplete="off">
                             </div>
                             <div>
                                 <label for="phone_number">PHONE NUMBER</label><br>
-                                <input type="tel" name="PhoneNumber" id="phone_number">
+                                <input class="input-default" type="tel" name="PhoneNumber" id="phone_number" autocomplete="off">
                             </div>
                             <div>
                                 <label for="password_confirm">CONFIRM PASSWORD</label><br>
-                                <input type="password" name="PasswordConfirm" id="password_confirm" minlength="8">
+                                <input class="input-password" type="password" name="PasswordConfirm" id="password_confirm" minlength="8" autocomplete="off">
                             </div>
                         </div>
                     </div>
                 </form>
             </div>
             <div class="form-footer">
-                <button type="submit" form="new-account" value="CreateAccount">Create Account</button>
+                <button type="submit" form="new-account" value="CreateAccount" id="submit-btn">Create Account</button>
                 <p>Already have an account? <a href="#">Log in</a></p>
             </div>
         </div>
