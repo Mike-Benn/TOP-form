@@ -84,14 +84,87 @@ img {
     height: 45vh;
     width: 100%;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
 }
 
-
+input {
+    display: block;
+}
 
 .form-header > p {
     width: 88%;
     font-weight: bold;
 }
+
+.form-contents {
+    display: flex;
+    gap: 15%;
+
+}
+
+.input-default {
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 5px 10px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.input-default:focus , .input-password:focus {
+    opacity: 1;
+    outline: none;
+    border: 1px solid blue;
+    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.1);
+    color: black;
+
+}
+
+.input-password {
+    border-radius: 4px;
+    border: 1px solid black;
+    padding: 5px 10px;
+
+}
+
+.input-error {
+    border: 1px solid red;
+    border-radius: 4px;
+    opacity: 1;
+    padding: 5px 10px;
+}
+
+.error-message:after {
+    content: "* Passwords do not match";
+    color: red;
+    margin-top: 25px;
+    font-size: 10px;
+
+}
+
+.input-error:focus {
+    border: 1px solid blue;
+    outline: none;
+    opacity: 1;
+
+}
+
+
+
+
+
+label {
+    font-size: 10px;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 2px;
+}
+
+.form-left , .form-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 
 .form-footer {
     height: 30vh;
