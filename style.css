@@ -71,16 +71,30 @@ img {
      
 }
 
-.form-body {
-    height: 65vh;
+.form-header {
+    height: 25vh;
     width: 100%;
     box-sizing: border-box;
     padding: 25px 40px;
     
 }
 
+.form-body {
+    padding: 0px 40px;
+    height: 45vh;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+
+.form-header > p {
+    width: 88%;
+    font-weight: bold;
+}
+
 .form-footer {
-    height: 35vh;
+    height: 30vh;
     width: 100%;
     box-sizing: border-box;
     padding: 25px 40px;
